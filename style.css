@@ -1,0 +1,138 @@
+html, body {
+    font-family: 'Roboto Slab', serif;
+    font-size: 15px;
+    min-height: 180px;
+    width: 400px;
+    padding: 0;
+    
+    margin: 0;
+
+}
+/* DARK-MODE */
+
+.dark-mode{
+    background-color: black;
+    color: white;
+    
+  }
+
+.git-change{
+    color: gainsboro;
+}
+.twitch-change{
+    color: #8969c4;
+}
+.facebook-change{
+    color: #4e75c9;
+}
+
+.name-change{
+    color: rgba(87, 202, 255, 0.867);
+
+}
+
+
+
+
+/* HEADER */
+
+#icon{
+    padding-top: 10px;
+}
+.header{
+    justify-content: center;
+    text-align: center;
+}
+img{
+    width: 50px;
+    text-align: center;
+    
+}
+.name{
+    font-size: 30px;
+    color: rgba(7, 139, 201, 0.867);
+}
+
+
+
+
+
+/* APPS */
+
+a{
+    font-size: 40px;
+    transition: opacity 0.2s ease-in-out;
+}
+
+#facebook{
+    color: #3b5998;
+}
+
+#instagram{
+    color: #E1306C;;
+
+}
+
+
+#twitter{
+    color: #00acee;
+
+}
+#linked{
+    color: #0e76a8;
+
+}
+#git{
+    color: #211F1F;
+
+}
+
+#youtube{
+    color: #FF0000;
+    
+}
+#reddit{
+    color: #FF4301;
+}
+
+#whatsapp{
+    color: #25D366;
+}
+
+#twitch{
+    color: #6441a5;
+}
+
+#row{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    opacity: 1;
+            
+}
+
+a:hover{
+    opacity: 0.5;
+
+}
+
+/* PROMPT */
+
+.prompt{
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 5px;
+    margin: 0;
+    font-weight: 600;
+
+}
+/* FOOTER */
+
+#settings{
+    margin-bottom: 15px;
+}
+
+footer{
+    text-align: center;
+    color: gray;
+}
