@@ -18,14 +18,12 @@ function modifyPlatformStorage(event) { //pass the even as a argument
     var id = event.srcElement.id; // get the id of the clicked element
     var platform = (id.slice(0, id.indexOf("-"))); //convert the id to platform name
 
-
     if (localStorage.getItem(platform) == "on") {
         localStorage.setItem(platform, "off");
     }
     else {
         localStorage.setItem(platform, "on");
     }
-
 
     if (localStorage.getItem("color-".concat(platform)) == "blue") {
         localStorage.setItem("color-".concat(platform), "gray");
@@ -39,11 +37,9 @@ function modifyPlatformStorage(event) { //pass the even as a argument
 function modifyModeStorage() {
     if (localStorage.getItem("mode") == "dark") {
         localStorage.setItem("mode", "light");
-
     }
     else {
         localStorage.setItem("mode", "dark");
-
     }
     updateMode();
 
@@ -51,7 +47,7 @@ function modifyModeStorage() {
 
 
 function updateMode() {
-    console.log()
+
     if (localStorage.getItem("mode") == "dark") {
         $('#mode-switch').text('Light Mode')
         $('#main, p').toggleClass('dark-mode', true);
@@ -76,6 +72,7 @@ document.getElementById('reddit-switch').addEventListener("click", modifyPlatfor
 document.getElementById('whatsapp-switch').addEventListener("click", modifyPlatformStorage);
 document.getElementById('github-switch').addEventListener("click", modifyPlatformStorage);
 document.getElementById('twitch-switch').addEventListener("click", modifyPlatformStorage);
+document.getElementById('linkedin-switch').addEventListener("click", modifyPlatformStorage);
 
 document.getElementById('mode-switch').addEventListener("click", modifyModeStorage);
 
@@ -83,28 +80,14 @@ document.getElementById('mode-switch').addEventListener("click", modifyModeStora
 
 
 //FUNCTION CALLS
-platforms = ['youtube', 'facebook', 'instagram', 'twitter', 'reddit', 'whatsapp', 'github', 'twitch']
+platforms = ['youtube', 'facebook', 'instagram', 'twitter', 'reddit', 'whatsapp', 'github', 'twitch', 'linkedin']
 
-var i;
-for (i = 0; i < platforms.length; i++) {
-    updateToggles(platforms[i]);
+
+for (platform of platforms) {
+    updateToggles(platform);
 
 }
-// updateToggles("youtube");
-// updateToggles("facebook");
-// updateToggles("twitch");
-// updateToggles("whatsapp");
-// updateToggles("github");
-// updateToggles("reddit");
-// updateToggles("twitter");
-// updateToggles("instagram");
+
 
 updateMode();
-
-
-
-
-
-
-
 
